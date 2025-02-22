@@ -1,0 +1,13 @@
+# Nmap
+
+- command-line tool (network mapper)
+- some common switches:
+    - -p <port>
+    - -p (top 1000)
+    - -p- (all 65,000 ports)
+    - -T<1-5> (speed/stealth of scan 1=slow 5=fast)
+    - -sV (version)
+    - -O (OS)
+    - -sC (script)
+    - -A (-sV, -sC, and -O)
+    - must list target ip
