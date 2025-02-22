@@ -1,0 +1,16 @@
+# Hunting Business OSINT
+
+- Google and visit company website
+- Can start with LinkedIn
+    - number, website, where
+    - can try to see badge, dress code, employees
+    - By searching their title/description in quotes, you can get a direct link to an otherwise private profile
+        - good trick here is Google search: site:linkedin.com “* at <company name>/in”
+- Try other social media
+- Open Corporates - https://opencorporates.com/
+    - type in company name
+    - seems just okay
+- AI HIT - https://www.aihitdata.com/
+    - similar, but may glean new info
+- Indeed
+    - Job postings tell some technologies and languages
