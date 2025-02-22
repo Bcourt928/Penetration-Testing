@@ -1,0 +1,13 @@
+# Website Technologies
+
+- builtwith.com
+    - Gives apps/tech that the website is using
+    - most important is to check the frameworks (PHP, Adobe Cloud, etc)
+- wappalyzer (extension)
+    - chrome extension that gives information about programming languages, analytics, and content management system)
+    - often gives version
+- whatweb
+    - command-line tool
+    - whatweb <url>
+    - not vert pretty of a tool
+    - may give different information (like version)
