@@ -1,0 +1,10 @@
+- NTDS.dit
+    - a database that stores AD data, including
+        - user info
+        - group info
+        - security descriptors
+        - password hashes
+- We can dump the NTDS.dit file once we have a domain admin
+    - [secretsdump.py](http://secretsdump.py) MARVEL.local/hawkeye:’Password1’@<dc_ip> -just-dc-ntlm (just NTDS.dit)
+- The hash is an LM:NT. We just need NT
+- To isolate just the NT of multiple hashes, bring it to excel → data → text to columns → delimiter :
