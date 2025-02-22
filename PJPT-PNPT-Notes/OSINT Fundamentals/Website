@@ -1,0 +1,72 @@
+# Website OSINT
+
+- Google
+- BuiltWith - https://builtwith.com/
+    - Tells what the website is built with
+    - Framework
+    - Name Server
+    - Wigets
+- Domain Dossier - https://centralops.net/co/
+    - This is all passive
+    - Gets an IP address of webserver
+    - Shows the Whois record
+    - Gives us MX (mail server)
+    - Can service scan (like nmap)
+- DNSlytics - https://dnslytics.com/reverse-ip
+    - Reverse IP tool
+    - Discovers all domains that also use this IP address
+        - This is more valuable when it’s hosted privately
+- SpyOnWeb - https://spyonweb.com/
+    - Can use url, ip, and can do analytics
+        - mostly the same as other tools
+        - Can use the UA from Virus Total
+- Virus Total - https://www.virustotal.com/
+    - Check if a file has malware
+    - can also do url search
+        - gives much of the same info
+        - There is a UA (Analytics)
+- Visual Ping - https://visualping.io/
+    - Looks for website changes and monitors changes
+- Back Link Watch - http://backlinkwatch.com/index.php
+    - search for the domain
+    - looks for back links (where the website was posted somewhere else)
+    - Definitely gave additional information that was not found
+- View DNS - https://viewdns.info/
+    - can perform reverse ip lookup
+        - shows websites it’s tied to
+
+# Part II
+
+- urlscan.io - https://urlscan.io/
+    - can see what a website is without going to it
+    - where it’s based, ip, live screenshot
+    - detects technologies
+- DNSdumpster - https://dnsdumpster.com/
+    - Where it’s hosted
+    - Name servers
+    - MX records
+    - Domain mapping
+- Web Check - https://web-check.as93.net/
+    - Very similar things
+- crt.sh - https://crt.sh/
+    - finds subdomains
+    - %.tesla.com
+
+## Part III
+
+- Shodan
+    - Known for exposed IoT devices
+        - can literally hack webcams or cams
+    - Can check ip address
+        - does service scan
+        - where it is, ports and services, ISP
+    - queries
+        - city:<city> port:<port> org:<organization>
+        - takes pictures of machines
+            - can give domains
+            - shows RDP
+- Wayback Machine
+    - type in domain
+    - shows archived versions of website
+    - Possible data leaks in older sites
+- He said to always check cached data at the end
