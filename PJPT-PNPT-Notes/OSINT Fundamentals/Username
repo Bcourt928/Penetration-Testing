@@ -1,0 +1,12 @@
+# Username OSINT
+
+- NameChk
+    - checks which usernames are available
+    - can find accounts and links that go to the website
+- WhatsMyName
+    - does the same thing
+- NameCheckup
+    - does the same thing
+- Ways to get crafty:
+    - kik.me/<username>
+        - will give name of user and profile pic
