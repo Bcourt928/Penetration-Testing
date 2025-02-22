@@ -1,0 +1,6 @@
+# Domain Enumeration with ldapdomaindump
+
+- mkdir marvel.local
+- cd marvel.local
+- sudo ldapdomaindump ldaps://<DC_IP> -u (username) ‘MARVEL\fcastle’ -p Password1
+- dumps the AD enumeration files into the new directory (can use firefox command to view html)
