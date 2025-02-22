@@ -1,0 +1,8 @@
+# Google Fu/Google Dorking
+
+- A way to narrow results
+- Google search syntax (will bring up a page of search syntax)
+- site:<url> (brings up just that site
+- site<url> -www (excludes what is after the minus)
+- site:<url> filetype:<type of file> (shows only that file type)
+    - used to look for potentially sensitive files
