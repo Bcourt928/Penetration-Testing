@@ -1,0 +1,23 @@
+# Search Engine OSINT
+
+- Different options
+    - Google
+    - DuckDuckGo - a little more private browsing
+    - Bing
+    - Yandex - Russian-based search engine
+    - Baidu - Asian-based search engine (doesn’t do well in America or Europe)
+
+# Google
+
+- Google Dorking/Google Fu
+    - site:<website.com> - searches this site only
+    - AND - must have both (can do multiple)
+    - OR - either or
+    - “<option_1 option_2>” - searches in that order
+    - * - wildcard
+        - the * mentor —> the cyber mentor, the creepy mentor
+    - filetype:<filetype> - like pdf, xlsx, docx, csv, html, txt, cs, java, pl, xml, png, jpeg, gif, etc.
+    - -<words> - subtracts from search (can stack these) (-www to help subdomains)
+    - intext:<word> - in the text of the website
+    - inurl<word> - looking in the url of websites
+- There is also Google Advanced Search that does it all
