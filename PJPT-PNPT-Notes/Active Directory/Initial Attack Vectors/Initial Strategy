@@ -1,0 +1,10 @@
+# Initial Internal Attack Strategy
+
+- Run mitm6 or Responder
+- Run scans to generate traffic
+- Look for websites in scope
+- Look for default credentials on web logins
+    - printers (passback)
+    - Jenkins
+    - Etc
+- Think outside the box
