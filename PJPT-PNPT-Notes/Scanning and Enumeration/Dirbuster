@@ -1,0 +1,7 @@
+# Dirbuster
+
+- command line directory enumeration tool
+- dirbuster&
+    - brings up another page
+    - input Target URL with port #
+    - use a word list (on Kali found in /usr/share/wordlists/dirbuster/<name>
