@@ -1,0 +1,8 @@
+# Plumhound
+
+- cd /opt/PlumHound
+- sudo python3 [PlumHound.py](http://PlumHound.py) —easy -p neo4j1
+    - Bloodhound/neo4j must be working
+- sudo python3 [PlumHound.py](http://PlumHound.py) -x tasks/default.tasks -p neo4j1
+    - this will spit out more reports
+    - index.html is the master
