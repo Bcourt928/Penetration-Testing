@@ -1,0 +1,41 @@
+Reverse Image Searching
+images.google.com (Google Lens)
+drag and drop the image
+pretty much only finds exact
+works really well for buildings
+yandex.com (Russian-based)
+also finds similar images
+TinEye
+not great, but something different
+Pim Eyes
+paid subscription
+VERY VERY robust
+10 free searches
+
+# Viewing EXIF Data
+
+- EXIF Data - data stored in photograph
+    - could be location
+    - type of phone
+    - social media strips the data usually
+- Online tool: Jimpl
+    - drag and drop the image
+    - gives all sort of data
+
+# Physical Location OSINT
+
+- This could actually include breaking in, visiting, drone
+- From afar, go to Google Maps and use the satellite option
+    - Look for the surroundings
+    - Is there a guard tower?
+    - Can I sit and fly a drone nearby without suspicion?
+    - Multiple entries?
+    - Look at the Street View
+        - Smoking area
+        - What do doors look like?
+        - What is dress code?
+
+# Identifying Geographical Location
+
+- https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/
+
