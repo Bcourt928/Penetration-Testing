@@ -1,0 +1,4 @@
+# Nikto
+
+- vulnerability scanning command-line tool
+- nikto -h <ip_address>
