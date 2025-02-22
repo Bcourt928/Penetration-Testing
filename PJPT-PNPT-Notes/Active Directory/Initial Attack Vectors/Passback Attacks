@@ -1,0 +1,5 @@
+# Passback Attacks
+
+- IoT, mostly printers
+- Looking for access for something that connects to LDAP or SMB
+- change the LDAP to point to your IP rather than the DC and set up a listener (either nc or responder)
