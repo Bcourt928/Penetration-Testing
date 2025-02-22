@@ -1,0 +1,27 @@
+# Email OSINT
+
+- Hunter.io
+    - type in a company name
+    - identifies emails leaked
+    - also identifies pattern of email structure (firstname.lastname@companyname.com)
+    - probably need a gmail to actually get data
+- Phonebook.cz
+    - enter company domains
+    - easier to put into a list to password spray
+- VoilaNorbert
+    - same as hunter.io
+- Clearbit Connect
+    - Must be used in Chrome (extension)
+    - A little more robust
+        - can search by role
+    - Only so many free searches
+- Email Hippo
+    - https://tools.verifyemailaddress.io
+    - verify if they are active
+- Email Checker
+    - email-checker.net/validate
+    - same as Email Hippo
+- Google won’t let you type password if account doesn’t exist
+    - Also try forgot password
+    - try another way
+    - Gives some of recovery email
