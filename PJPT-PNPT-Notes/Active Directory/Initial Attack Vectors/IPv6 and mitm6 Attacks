@@ -1,0 +1,21 @@
+# IPv6 Attacks Overview
+
+- Go to attack
+- More reliable than relaying because it uses IPv6
+- Basically spoofing DNS for IPv6 since nobody usually does it
+- Uses this to create an account with the DC
+    - tool is MITM6 (man in the middle)
+
+# mitm6
+
+- IPv6 attack on DC
+- sudo mitm6 -d marvel.local
+- [ntlmrelayx.py](http://ntlmrelayx.py) -6 -t ldaps://<domain_ip> -wh fakepad.<domain> -l lootme
+    - we can use regular [ntlmrelayx.p](http://ntlmrelayx.pa)y for this
+
+# IPv6 Attack Defenses
+
+- Disable IPv6 could cause unwanted effects
+    - could instead set up blocks
+    - disabling WPAD
+    - LDAP signing
