@@ -1,0 +1,10 @@
+# Metasploit
+
+- very useful command-line exploitation framework
+- msfconsole
+    - search feauture = search <whatever you want to search
+    - use <either the path (auxiliary/scanner/smb/smb_version) or the number (0)>
+        - once using a module, you can use ‘info’
+        - ‘options’ shows things like RHOSTS
+        - to set RHOSTS use: set RHOSTS <ip>
+        - run
