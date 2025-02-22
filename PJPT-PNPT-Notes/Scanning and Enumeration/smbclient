@@ -1,0 +1,4 @@
+# smbclient
+
+- attempt to connect to the file share
+- smbclient -L \\\\<ip>\\
