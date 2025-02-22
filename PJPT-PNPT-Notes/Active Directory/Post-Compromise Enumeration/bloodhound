@@ -1,0 +1,13 @@
+# Domain Enumeration with Bloodhound
+
+- first run neo4j
+    - sudo neo4j console
+    - this will give a clickable link to a local host ip
+    - username and password are neo4j (changed to neo4j1)
+- sudo bloodhound
+    - login with neo4j and neo4j1
+- Need to gather data using an injester
+    - mkdir bloodhound
+    - cd bloodhound
+    - sudo bloodhound-python -d MARVEL.local -u fcastle -p Password1 -ns <DC_IP> -c all
+    
