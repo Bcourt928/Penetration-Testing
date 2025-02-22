@@ -1,0 +1,9 @@
+# Nessus
+
+- Scan any private ip address
+    - up to 16 at once
+    - can’t scan website or outside host
+- vulnerability scanner
+- I like the interface of Nessus
+    - categorizes vulnerability by severity
+- some modules provide more functionality like brute forcing with Hydra
