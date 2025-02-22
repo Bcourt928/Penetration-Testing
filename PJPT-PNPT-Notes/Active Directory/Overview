@@ -1,0 +1,36 @@
+# Active Directory Overview
+
+- Physical
+    - Domain Controller - controls everything
+        - hosts AD
+        - provides authorization/authentication
+    - AD DS Data Store
+        - hosts Ntds.dit file
+            - this file has stored password hashes
+- Logical
+    - AD DS Schema
+        - like a rulebook or blueprunt
+        - defines objects that can be stored
+            - Class object: like user, computers
+            - Attribute object: display name
+    - Domain
+        - Administrative boundary for applying policies to groups of objects
+    - Tree
+        - Hierarchy of domains
+            - parent and children domains
+        - Shared name
+        - Shared trust
+    - Forests
+        - collection of domain trees
+            - share schema, config partition
+        - enables trusts between domains within forests
+    - Organizational Units
+        - containers
+        - set policies or conditions
+        - objects live within OUs
+    - Trusts
+        - Directional - directly from trusting to trusted domain
+        - Transitive - extended beyond a two-domain trust
+        - All domains in a forest trust other domains in a forest
+    - Objects
+        - live within a OU
