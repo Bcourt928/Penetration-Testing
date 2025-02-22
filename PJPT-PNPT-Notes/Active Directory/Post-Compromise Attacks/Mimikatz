@@ -1,0 +1,8 @@
+# Mimikatz
+
+- Unfortunately, gets picked up by nearly every antivirus
+- used to view and steal credentials
+-will need to get onto machine remotely
+- can dump creds stored in memory
+- privilege::debug
+- sekurlsa::logonpasswords
